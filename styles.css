@@ -1,3 +1,4 @@
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,16 +8,17 @@
 body {
     width: 100%;
     background-color: #e5d49f;
-
+    font: 16px;
 }
 
 nav {
     width: 100%;    
-    min-height: 150px;       
+    /* min-height: 150px; */
+    min-height: 100px;       
     background-color: #424242;
     background-image: url(breathe-yogaLogo.png); 
     background-repeat: no-repeat;   
-    padding: 10px 10px;    
+    padding: 35px;
 }
 
 /*nav img {
@@ -30,14 +32,20 @@ nav {
     text-align: right;         
 }
 
+/* .align-right {    
+    text-align: center;         
+} */
+
 ul {
     margin-top: 20px;
+    list-style: none;
 }
 
 a {   
     color: #3E8C84;    
     margin-right: 10px;
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 18px;    
     text-decoration: none;     
 }
 
@@ -51,21 +59,31 @@ hr {
     border: none;
 }
 
+/* Header Styles */
 header {    
-    height: 600px;
+    /* height: 600px; */
+    height: 300px;
     background-image: url(river-torrent.jpg);
     background-repeat: no-repeat;        
 }
 
 .welcome {    
+    margin: 20px;
     background-color: rgb(66, 66, 66, 0.7);       
     border-radius: 5px;
     color: #ccaa40;
     display: inline-block;
-    margin-top: 65px;
+    /* margin-top: 65px;
     margin-left: 70%;
-    margin-right: 5%;
+    margin-right: 5%; */
     padding: 10px;
+
+    /* Control position and width*/
+    max-width: 600px;   
+    /* width: 80px; */
+    float: right;
+    /* clear: both; */ 
+    /* margin-right: 5%; */ 
 }
 
 .welcome h1 {
@@ -78,7 +96,7 @@ header {
 .welcome hr {
     width: 100%;
     height: 5px;
-    background: rgb(62, 140, 132, .7);    
+    background: rgba(62, 140, 132, .7);    
 }
 
 .welcome p {
@@ -87,10 +105,12 @@ header {
     line-height: 1.5;    
 }
 
+/* Retreat and Join Sections */
 .retreat, .join {
     width: 100%;
-    background-color: rgb(62, 140, 132, .7);
-    padding: 15px 0 15px 40px;
+    background-color: rgba(61, 143, 135, 0.702);
+    /* padding: 15px 0 15px 40px; */
+    padding: 15px;
 }
 
 .retreat h2, .join h2 {
@@ -105,18 +125,29 @@ header {
 }
 
 .join input {
+    width: 25%;
     margin: 5px 0px;
     padding: 10px;
     border-radius: 5px;
     background-color: #dfd8c4;
-    color:rgb(62, 140, 132);
+    color:rgba(62, 140, 132);
+}
+
+.join button {
+    width: 130px;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #dfd8c4;
+    color:rgba(62, 140, 132);
 }
 
 ::placeholder {
-    color:rgb(62, 140, 132);
+    color:rgba(62, 140, 132);
     opacity: 1;
 }
 
+/* Footer Styles */ 
 footer {
     padding: 20px;
     text-align: center;
@@ -128,3 +159,28 @@ footer a, p {
     margin: 10px;    
 }
 
+/* Media Queries for Larger Screens  */
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        height: 450px;
+    }
+
+    .welcome {
+        width: 60%;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        min-height: 150px;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+}
