@@ -69,7 +69,7 @@ header {
 }
 
 .welcome {    
-    /* margin: 20px;
+    margin: 20px;
     background-color: rgb(66, 66, 66, 0.7);       
     border-radius: 5px;
     color: #ccaa40;
@@ -77,17 +77,8 @@ header {
     padding: 10px;    
     max-width: 600px;
     box-sizing: border-box;
-    overflow: break-word;        */
-    width: 50%;
-    max-width: 90%;
-    margin: 20px auto;
-    background-color: rgba(66, 66, 66, 0.7);
-    border-radius: 5px;
-    color: #ccaa40;
-    display: block;
-    padding: 10px;
-    box-sizing: border-box;
-    overflow-wrap: break-word;
+    overflow-wrap: break-word; 
+    
 }
 
 .welcome h1 {
@@ -165,7 +156,7 @@ footer a, p {
 
 /* Media Queries for Different Sized Screens  */
 
-@media (min-width: 340px) and (max-width: 480px) {
+@media (min-width: 375px) and (max-width: 480px) {
     nav {
         min-height: 150px;        
     }
