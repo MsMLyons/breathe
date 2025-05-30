@@ -5,14 +5,20 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
+    overflow-x: hidden;
+}
+
+nav, header, footer {
     width: 100%;
+}
+
+body {    
     background-color: #e5d49f;
     font: 16px;
 }
 
-nav {
-    width: 100%;   
+nav {     
     min-height: 100px;       
     background-color: #424242;
     background-image: url(breathe-yogaLogo.png); 
@@ -63,7 +69,7 @@ header {
 }
 
 .welcome {    
-    margin: 20px;
+    /* margin: 20px;
     background-color: rgb(66, 66, 66, 0.7);       
     border-radius: 5px;
     color: #ccaa40;
@@ -71,7 +77,17 @@ header {
     padding: 10px;    
     max-width: 600px;
     box-sizing: border-box;
-    overflow: break-word;       
+    overflow: break-word;        */
+    width: 50%;
+    max-width: 90%;
+    margin: 20px auto;
+    background-color: rgba(66, 66, 66, 0.7);
+    border-radius: 5px;
+    color: #ccaa40;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
 }
 
 .welcome h1 {
@@ -147,27 +163,39 @@ footer a, p {
     margin: 10px;    
 }
 
-/* Media Queries for Larger Screens  */
-@media screen and (min-width: 600px) {
-    body {
-        font-size: 18px;
+/* Media Queries for Different Sized Screens  */
+
+@media (min-width: 340px) and (max-width: 480px) {
+    nav {
+        min-height: 150px;        
+    }
+
+    a {
+        margin-left: 0;
     }
 
     header {
-        height: 450px;
+        height: 600px;
     }
 
-    .welcome {
-        width: 100%;       
+    .welcome {      
+        max-width: 90%;
+        
+    }
+
+    .welcome h1 {
+        padding-top: 10px;
     }
 
     .welcome p {
-        font-size: 17px;
-        line-height: 1.40;
+        font-size: 16px;
+        line-height: 1.4;
+        padding-top: 10px;
+        
     }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
     nav {
         min-height: 150px;
     }
@@ -182,12 +210,51 @@ footer a, p {
     }
 }
 
+
 @media screen and (max-width: 599px) {  
+    header {
+        height: 600px;
+    }
+    
     .welcome {
-        width: 50%;                
+        width: 75%;                
     }    
 
     .welcome p {
         line-height: 1.25;
     }
 }
+
+@media screen and (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        height: 450px;
+    }
+
+    .welcome {
+        width: 100%;       
+    }
+
+    .welcome p {
+        font-size: 18px;
+        line-height: 1.40;
+    }
+}
+
+/*@media screen and (min-width: 768px) {
+    nav {
+        min-height: 150px;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    .welcome p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}*/
