@@ -157,7 +157,39 @@ footer a, p {
 
 /* Media Queries for Different Sized Screens  */
 
-@media (min-width: 340px) and (max-width: 480px) {
+@media (min-width: 310px) and (max-width: 374px) {
+    
+    .logo {
+        width: 50%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    header {
+        height: 650px;
+    }
+
+    .welcome {      
+        max-width: 90%;        
+    }
+
+    .welcome h1 {
+        padding-top: 10px;
+    }
+
+    .welcome p {
+        font-size: 16px;
+        line-height: 1.4;
+        padding-top: 10px;        
+    }
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
     
     .logo {
         width: 50%;
