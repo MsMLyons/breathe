@@ -114,14 +114,14 @@ breathe/
 ├── styles.css
 ├── script.js
 ├── breathe-yogaLogo.png
-└── river-torrent.jpg
+├── river-torrent.jpg
 
 ---
 
 ## 🧑‍💻 Author
 
 Created by [Marki Lyons](https://mlyons-portfolio.netlify.app)  
-&copy; <span id="copyright-year">
+&copy; 2025
 
 ---
 
