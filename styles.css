@@ -71,7 +71,7 @@ header {
     border-radius: 5px;    
     display: inline-block;   
     padding: 10px;    
-    max-width: 600px;
+    max-width: 500px;
     box-sizing: border-box;
     overflow-wrap: break-word;     
 }
@@ -79,7 +79,7 @@ header {
 .welcome h1 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
     padding-bottom: 5px;
     color: #ccaa40;
 }
@@ -261,7 +261,7 @@ footer a, p {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1919px) {
     nav {
         min-height: 150px;
     } 
@@ -271,7 +271,7 @@ footer a, p {
     }
 
     .welcome {      
-        width: 50%;
+        width: 50%;        
         
     }
 
